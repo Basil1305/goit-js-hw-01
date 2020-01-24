@@ -1,4 +1,4 @@
-"use strickt";
+"use strict";
 
 const calculateEngravingPrice = function(string, pricePerWord) {
   const words = string.split(" ");
