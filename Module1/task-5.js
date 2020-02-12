@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const china = 'китай';
 const chinaPrise = 100;
