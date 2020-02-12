@@ -1,3 +1,5 @@
+'use strict';
+
 let input;
 let userTotal = 0;
 
