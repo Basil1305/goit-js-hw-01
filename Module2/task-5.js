@@ -3,11 +3,7 @@ const checkForSpam = function(message) {
   message = message.toLowerCase();
   // console.log(message.indexOf('sale'));
   let word = message;
-  if (word.includes("sale") || word.includes("spam")) {
-    return true;
-  } else {
-    return false;
-  }
+  return word.includes('sale') || word.includes('spam');
 };
 
 console.log(checkForSpam("Latest technology news")); // false
