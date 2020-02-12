@@ -1,3 +1,5 @@
+'use strict'
+
 const china = 'китай';
 const chinaPrise = 100;
 const chili = 'чили';
