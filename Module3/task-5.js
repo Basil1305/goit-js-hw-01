@@ -9,7 +9,7 @@ const products = [
 
 function getAllPropValues(arr, prop) {
   return arr.reduce(function(result, item) {
-    if (result.indexOf(item[prop]) == -1 && typeof item[prop] != "undefined")
+    if (result.indexOf(item[prop]) === -1 && typeof item[prop] != "undefined")
       // без underfind
       result.push(item[prop]);
     return result;
