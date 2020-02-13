@@ -2,19 +2,16 @@
 
 let input;
 const numbers = [];
-let sum = 0;
+let total = 0;
 
 do {
-  input = prompt("Введите число :");
-  if (input === null) {
-    for (const number of numbers) {
-      sum += Number(number);
+    input = prompt('Введите число :');
+    if (input !== null) {
+        numbers.push(input);
+    } else {
+        for (const number of numbers) {
+            total += Number(number);
+        }
     }
-
-    let Tnumber = numbers.join(" + ");
-    console.log(Tnumber + " = " + sum);
-    break;
-  } else {
-    numbers.push(input);
-  }
-} while (true);
+} while (input != null);
+console.log('Общая сумма чисел равна ' + total);
