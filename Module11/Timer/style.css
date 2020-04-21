@@ -1,0 +1,19 @@
+body {
+  background-color: #c2c2c2;
+}
+
+.timer {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 50px;
+}
+.value {
+  font-size: 45px;
+  font-weight: 200;
+}
+.field {
+  display: inline-block;
+}
