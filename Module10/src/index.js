@@ -1,6 +1,6 @@
-import './styles.css';
-import menuHbs from './menuH.hbs';
-import menu from './menu.json';
+import './styles/styles.css';
+import menuHbs from './templates/menuH.hbs';
+import menu from './data/menu.json';
 
 const switchTheme = document.querySelector('.js-switch-input');
 const switchThemeBody = document.querySelector('body');
