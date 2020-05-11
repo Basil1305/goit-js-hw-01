@@ -1,8 +1,8 @@
-import handlebars from './country.hbs';
-import handlebarsFull from './country-full.hbs';
+import handlebars from '../templates/country.hbs';
+import handlebarsFull from '../templates/country-full.hbs';
 import newServices from './country-services';
 import { error } from '@pnotify/core/dist/PNotify';
-import '../node_modules/@pnotify/core/dist/BrightTheme.css';
+import '../../node_modules/@pnotify/core/dist/BrightTheme.css';
 const debounce = require('lodash.debounce');
 const ul = document.querySelector('.country-list');
 const body = document.querySelector('body');
@@ -16,9 +16,13 @@ function chec(e) {
         li: data,
       };
       const readyLi = Build(marcup.li);
-      insertLi(readyLi);
+
       if (document.querySelector('#element1')) {
         document.querySelector('#element1').remove();
+      }
+      if (data.length < 10 && data.length > 1) {
+        clearList();
+        insertLi(readyLi);
       }
       if (data.length > 10) {
         clearList();
@@ -36,6 +40,7 @@ function chec(e) {
         insertFullLi(readyFull);
       }
     })
+
     .catch(error => {
       if (document.querySelector('#element1')) {
         document.querySelector('#element1').remove();

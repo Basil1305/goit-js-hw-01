@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-image: url('./images/bg-pattern.png');
+  background-image: url('../images/bg-pattern.png');
 }
 
 input[type='text'] {
