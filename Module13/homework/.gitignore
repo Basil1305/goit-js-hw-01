@@ -1,5 +1,5 @@
 # production
-/build
+#/build
 
 # Logs
 logs
@@ -66,3 +66,13 @@ typings/
 .env.development.local
 .env.test.local
 .env.production.local
+
+
+*.babelrc
+*.prettierrc
+*.browserslistrc
+*.editorconfig
+*.json
+*postcss.config.js
+*.gitignore
+webpack/
